@@ -1,0 +1,56 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '2.7.11'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.beyond'
+
+
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '11'
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	// 의존성을 가져오는 대상 저장소(repository)
+	// 내부망에서 인터넷을 사용하기 불가한 경우에는 nexus(설치형)과 같은 repository를 사용하기도 함
+	// nexus의 문제: 버전 업데이트의 문제. 라이브러리가 버전업이 되면 사람이 직접 라이브러리 찾아서 부어야 함
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	// (주로) dto값 검증을 위한 어노테이션들 제공
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	compileOnly 'org.projectlombok:lombok'
+	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	// jwt 관련 라이브러리 추가
+	implementation "io.jsonwebtoken:jjwt:0.9.1"
+
+	// 파일 처리를 위한 aws 의존성 추가
+	implementation 'software.amazon.awssdk:s3:2.17.58'
+
+	// 동시성 제어를 위한 이벤트 기반 rabbit mq 추가
+	implementation 'org.springframework.boot:spring-boot-starter-amqp'
+
+}
+
+tasks.named('test') {
+//	useJUnitPlatform()
+}

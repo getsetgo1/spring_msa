@@ -1,0 +1,97 @@
+2024-07-24-17:24 c.b.o.OrdersystemApplication-Starting OrdersystemApplication using Java 11.0.22 on DESKTOP-QVHT6F7 with PID 82052 (C:\codes\hanhwa\spring\ordersystem\out\production\classes started by erp in C:\codes\hanhwa\spring\ordersystem)
+2024-07-24-17:24 c.b.o.OrdersystemApplication-The following 1 profile is active: "local"
+2024-07-24-17:24 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-24-17:24 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-24-17:24 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 22 ms. Found 0 JPA repository interfaces.
+2024-07-24-17:24 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-24-17:24 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-24-17:24 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-07-24-17:24 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8089 (http)
+2024-07-24-17:24 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8089"]
+2024-07-24-17:24 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-07-24-17:24 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-07-24-17:24 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-07-24-17:24 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 5098 ms
+2024-07-24-17:24 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-24-17:24 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-07-24-17:24 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-07-24-17:24 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-07-24-17:24 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-07-24-17:24 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-07-24-17:24 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-24-17:24 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-24-17:24 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-24-17:24 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration-
+
+Using generated security password: d048a629-7ce1-4a6d-82ae-128d74582b18
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-07-24-17:24 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6a0ee80, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71de1091, org.springframework.security.web.context.SecurityContextPersistenceFilter@8dcacf1, org.springframework.security.web.header.HeaderWriterFilter@3879feec, org.springframework.security.web.csrf.CsrfFilter@5b1f0f26, org.springframework.security.web.authentication.logout.LogoutFilter@185bf6e0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1e2b37cd, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@750c23a3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@25c16cf7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@50b4e7b2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73c09a98, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f2bf657, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53dbe7b2, org.springframework.security.web.session.SessionManagementFilter@53917c92, org.springframework.security.web.access.ExceptionTranslationFilter@6f89ad03, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@599310ab]
+2024-07-24-17:24 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8089"]
+2024-07-24-17:24 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8089 (http) with context path ''
+2024-07-24-17:24 o.s.s.a.ScheduledAnnotationBeanPostProcessor-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-07-24-17:24 c.b.o.OrdersystemApplication-Started OrdersystemApplication in 13.226 seconds (JVM running for 14.612)
+2024-07-24-17:32 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-24-17:32 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-07-24-17:32 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-07-24-17:32 c.b.o.OrdersystemApplication-Starting OrdersystemApplication using Java 11.0.22 on DESKTOP-QVHT6F7 with PID 70696 (C:\codes\hanhwa\spring\ordersystem\out\production\classes started by erp in C:\codes\hanhwa\spring\ordersystem)
+2024-07-24-17:32 c.b.o.OrdersystemApplication-The following 1 profile is active: "local"
+2024-07-24-17:32 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-24-17:32 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-24-17:32 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces.
+2024-07-24-17:32 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-24-17:32 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-24-17:32 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2024-07-24-17:32 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8089 (http)
+2024-07-24-17:32 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8089"]
+2024-07-24-17:32 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-07-24-17:32 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-07-24-17:32 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-07-24-17:32 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 4818 ms
+2024-07-24-17:32 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-24-17:32 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-07-24-17:32 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-07-24-17:32 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-07-24-17:32 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-07-24-17:32 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-07-24-17:32 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-24-17:32 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-24-17:32 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-24-17:32 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8089"]
+2024-07-24-17:32 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8089 (http) with context path ''
+2024-07-24-17:32 o.s.s.a.ScheduledAnnotationBeanPostProcessor-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-07-24-17:32 c.b.o.OrdersystemApplication-Started OrdersystemApplication in 12.191 seconds (JVM running for 13.496)
+2024-07-24-17:34 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-24-17:34 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-07-24-17:34 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-07-24-17:34 c.b.o.OrdersystemApplication-Starting OrdersystemApplication using Java 11.0.22 on DESKTOP-QVHT6F7 with PID 83768 (C:\codes\hanhwa\spring\ordersystem\out\production\classes started by erp in C:\codes\hanhwa\spring\ordersystem)
+2024-07-24-17:34 c.b.o.OrdersystemApplication-The following 1 profile is active: "local"
+2024-07-24-17:34 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-24-17:34 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-24-17:34 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 23 ms. Found 0 JPA repository interfaces.
+2024-07-24-17:34 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-24-17:34 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-24-17:34 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-07-24-17:34 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8089 (http)
+2024-07-24-17:34 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8089"]
+2024-07-24-17:34 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-07-24-17:34 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-07-24-17:34 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-07-24-17:34 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 5012 ms
+2024-07-24-17:34 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-24-17:34 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-07-24-17:34 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-07-24-17:34 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-07-24-17:34 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-07-24-17:34 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-07-24-17:34 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-24-17:34 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-24-17:34 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-24-17:34 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8089"]
+2024-07-24-17:34 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8089 (http) with context path ''
+2024-07-24-17:34 o.s.s.a.ScheduledAnnotationBeanPostProcessor-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-07-24-17:34 c.b.o.OrdersystemApplication-Started OrdersystemApplication in 15.132 seconds (JVM running for 16.213)
+2024-07-24-17:36 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-24-17:36 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-07-24-17:36 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
