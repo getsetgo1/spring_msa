@@ -27,28 +27,21 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
-	implementation 'org.springframework.boot:spring-boot-starter-security'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	// (주로) dto값 검증을 위한 어노테이션들 제공
-	implementation 'org.springframework.boot:spring-boot-starter-validation'
-	compileOnly 'org.projectlombok:lombok'
-	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
-	annotationProcessor 'org.projectlombok:lombok'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'org.springframework.security:spring-security-test'
-	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	// 유레카는 다른 서비스가 존재하는지 안하는지
+	// 의존성 왠만해서는 필요 없음
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+	implementation 'org.springframework.cloud:spring-cloud-starter-gateway'
+}
 
-	// jwt 관련 라이브러리 추가
-	implementation "io.jsonwebtoken:jjwt:0.9.1"
+// 스프링 클라우드에 대한 버전 지정
+ext{
+	set('springCloudVersion','2021.0.8')
+}
 
-	// 파일 처리를 위한 aws 의존성 추가
-	implementation 'software.amazon.awssdk:s3:2.17.58'
-
-	// 동시성 제어를 위한 이벤트 기반 rabbit mq 추가
-	implementation 'org.springframework.boot:spring-boot-starter-amqp'
-
+dependencyManagement{
+	imports{
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
 }
 
 tasks.named('test') {

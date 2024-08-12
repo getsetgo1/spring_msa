@@ -5,6 +5,7 @@ import com.beyond.ordersystem.product.domain.Product;
 import com.beyond.ordersystem.product.dto.ProductResDto;
 import com.beyond.ordersystem.product.dto.ProductSaveReqDto;
 import com.beyond.ordersystem.product.dto.ProductSearchDto;
+import com.beyond.ordersystem.product.dto.ProductUpdatStockDto;
 import com.beyond.ordersystem.product.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -26,8 +27,8 @@ public class ProductController {
     @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/product/create")
     public ResponseEntity<?> productCreate(@ModelAttribute ProductSaveReqDto dto){
-//        Product product = productService.productCreate(dto);
-        Product product = productService.createAwsProduct(dto);
+        Product product = productService.productCreate(dto);
+//        Product product = productService.createAwsProduct(dto);
 
         CommonResDto commonResDto = new CommonResDto(HttpStatus.CREATED,"succeffuly", product.getId());
         return new ResponseEntity<>(commonResDto,HttpStatus.CREATED);
@@ -44,6 +45,19 @@ public class ProductController {
         return new ResponseEntity<>(commonResDto,HttpStatus.OK);
     }
 
+    @GetMapping("/product/{id}")
+    public ResponseEntity<?> productDetail(@PathVariable Long id){
+        ProductResDto dto=productService.productDetail(id);
+        CommonResDto commonResDto = new CommonResDto(HttpStatus.OK,"OK",dto);
+        return new ResponseEntity<>(commonResDto,HttpStatus.OK);
+    }
+
+    @PutMapping("/product/updatestock")
+    public ResponseEntity<?> productStockUpdate(@RequestBody ProductUpdatStockDto dto){
+        Product product=productService.productUpdateStock(dto);
+        CommonResDto commonResDto = new CommonResDto(HttpStatus.OK, "update is successful", product.getId());
+        return new ResponseEntity<>(commonResDto,HttpStatus.OK);
+    }
 
 
 }

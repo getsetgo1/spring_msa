@@ -25,7 +25,9 @@ public class OrderController {
     }
     @PostMapping("/order/create")
     public ResponseEntity<?> orderCreate(@RequestBody List<OrderSaveReqDto> dto){
-        Ordering ordering = orderingService.orderCreate(dto);
+//        Ordering ordering = orderingService.orderRestTemplateCreate(dto);
+        Ordering ordering = orderingService.orderFeignClientCreate(dto);
+
         //getId 안 하면 순환참조 걸림
         CommonResDto commonResDto = new CommonResDto(HttpStatus.CREATED,"정상완료",ordering.getId());
         return new ResponseEntity<>(commonResDto, HttpStatus.CREATED);

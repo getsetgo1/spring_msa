@@ -5,6 +5,7 @@ import com.beyond.ordersystem.product.domain.Product;
 import com.beyond.ordersystem.product.dto.ProductResDto;
 import com.beyond.ordersystem.product.dto.ProductSaveReqDto;
 import com.beyond.ordersystem.product.dto.ProductSearchDto;
+import com.beyond.ordersystem.product.dto.ProductUpdatStockDto;
 import com.beyond.ordersystem.product.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -23,6 +24,7 @@ import software.amazon.awssdk.services.s3.model.PutObjectResponse;
 //import software.amazon.awssdk.services.s3.model.PutObjectRequest;
 //import software.amazon.awssdk.services.s3.model.PutObjectResponse;
 
+import javax.persistence.EntityNotFoundException;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
@@ -149,5 +151,16 @@ public class ProductService {
         } catch (IOException e) {
             throw new RuntimeException("이미지 저장 실패");
         }
+    }
+
+    public ProductResDto productDetail(Long id){
+        Product product = productRepository.findById(id).orElseThrow(()->new EntityNotFoundException("해당 상품이 없습니다."));
+        return ProductResDto.FromEntity(product);
+    }
+
+    public Product productUpdateStock(ProductUpdatStockDto dto){
+        Product product = productRepository.findById(dto.getProductId()).orElseThrow(()->new EntityNotFoundException("프로덕트 없습니다"));
+        product.updateStockQuantity(dto.getProductQuantity());
+        return product;
     }
 }
